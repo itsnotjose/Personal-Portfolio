@@ -1,0 +1,164 @@
+* {
+  background-color: #565554;
+}
+
+#main-card {
+  min-height: 700px;
+  background: none;
+  display: block;
+  padding-bottom: 3px;
+  background-color: rgba(255, 255, 255, 0.074);
+  border: 1px solid rgba(255, 255, 255, 0.222);
+  border-radius: 0.7rem;
+  width: 25%;
+  margin: 2%;
+}
+#infoCard {
+  min-height: 700px;
+  display: block;
+  background: none;
+  padding-bottom: 3px;
+  background-color: rgba(255, 255, 255, 0.074);
+  border: 1px solid rgba(255, 255, 255, 0.222);
+  border-radius: 0.7rem;
+  width: 100%;
+  margin: 2%;
+}
+
+img {
+  background: none;
+  width: 60%;
+  
+}
+.me{
+  border-radius: 9px;
+  background: linear-gradient(145deg, #4d4d4c, #5c5b5a);
+  box-shadow:  8px 8px 18px #3d3c3c,
+               -8px -8px 18px #6f6e6c;
+  margin-top: 10%;
+}
+#main-card h2 {
+  background: none;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+}
+#main-card p {
+  color: #f4f4f4;
+  background: none;
+  font-family: 'Montserrat', sans-serif;
+  border-radius: 9px;
+  background: linear-gradient(145deg, #4d4d4c, #5c5b5a);
+  box-shadow:  8px 8px 18px #3d3c3c,
+               -8px -8px 18px #6f6e6c;
+}
+#main-card ul {
+  background: none;
+  text-decoration: none;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+}
+
+#main-card ul li {
+  background: none;
+  text-decoration: none;
+  color: white;
+  list-style: none;
+  overflow:visible;
+  white-space: nowrap;
+  font-family: 'Montserrat', sans-serif;
+}
+
+#icon {
+  width: 10%;
+  height: auto;
+}
+
+nav {
+  background: none;
+}
+
+form {
+  background: none;
+  color: #565554;
+}
+#root {
+  background: none;
+}
+button {
+  background: none;
+}
+.webIcon {
+  background: none;
+  height: 5rem;
+  width: 3rem;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  
+}
+
+.about {
+  background: none;
+}
+.about p {
+  background: none;
+  font-family: 'Montserrat', sans-serif;
+}
+.about img {
+  width: 10%;
+}
+.cardBg {
+  border-radius: 9px;
+  background: linear-gradient(145deg, #4d4d4c, #5c5b5a);
+  box-shadow:  8px 8px 18px #3d3c3c,
+               -8px -8px 18px #6f6e6c;
+}
+@media only screen and (max-width: 768px) {
+  #main-card {
+    width: 100%;
+    margin: 0;
+  }
+
+  #infoCard {
+    width: 100%;
+    margin: 0;
+  }
+}
+
+#code-container {
+  font-family: monospace;
+  background: none;
+  color: #EBB02D;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.keyword {
+  color: #FE6244;
+  background: none;
+  font-family: monospace;
+}
+
+.property {
+  color: white;
+  background: none;
+  font-family: monospace;
+
+
+}
+
+.string {
+  color: #85CDFD;
+  background: none;
+  font-family: monospace;
+
+}
+
+.html {
+  font-family: monospace;
+  background: none;
+  color: #EBB02D;
+  
+}
