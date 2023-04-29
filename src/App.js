@@ -1,6 +1,5 @@
 
 
-
 import { Link, Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import Portfolio from "./components/portfolio";
 import Contact from "./components/contact";
