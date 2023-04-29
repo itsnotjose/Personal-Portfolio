@@ -1,238 +1,80 @@
-import React, { useState } from "react";
-import Form from "react-bootstrap/Form";
-import Button from "react-bootstrap/Button";
-function About() {
-  return (
-    <div className="about m-3">
-      <div class="container cardBg ">
-        <div id="code-container">
-          <span className="keyword">const</span> jose = &#123; <br />
-          <span className="property">frontend:</span> [
-          <span className="string">React</span>,{" "}
-          <span className="string">Javascript</span>,{" "}
-          <span className="string">NodeJS</span>,{" "}
-          <span className="string">CSS</span>,{" "}
-          <span className="string">Bootstrap</span>], <br />
-          <span className="property">backend:</span> [
-          <span className="string">Express</span>,{" "}
-          <span className="string">Node</span>,{" "}
-          <span className="string">MySQL</span>],
-          <br />
-          <span className="property">testingDeployment:</span> [
-          <span className="string">Jest</span>,{" "}
-          <span className="string">Heroku</span>],
-          <br />
-          <span className="property">developerTools:</span> [
-          <span className="string">Git</span>,{" "}
-          <span className="string">Handlebars</span>],
-          <br />
-          <span className="property">education:</span> &#123; <br />
-          <span className="property">universityOfUtah:</span>{" "}
-          <span className="string">
-            "Certificate in Full Stack Web Development"
-          </span>
-          &#125;
-          <br /> &#125;;
-        </div>
-      </div>
 
-      <div class="row pt-5 mt-5 bg-transparent">
-        <div class="col-sm-6 bg-transparent">
-          <div class="container cardBg">
-            <div class="card-body bg-transparent">
-              <h5 class="card-title bg-transparent">
-                <span className="html"> &lt;h5&gt;</span>{" "}
-                <span className="property"> Full Stack Web Developer </span>{" "}
-                <span className="html">&lt;/h5&gt;</span>
-              </h5>
-              <p class="card-text">
-                <span className="html"> &lt;p&gt;</span>{" "}
-                <span className="property">
-                  I am responsible for developing, creating, and testing
-                  website.
-                </span>
-                <span className="html">&lt;p&gt; </span>
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-6 bg-transparent">
-          <div class="container cardBg">
-            <div class="card-body bg-transparent">
-              <h5 class="card-title bg-transparent">
-                <span className="html"> &lt;h5&gt;</span>{" "}
-                <span className="property">Web Design </span>{" "}
-                <span className="html">&lt;/h5&gt;</span>
-              </h5>
-              <p class="card-text">
-                <span className="html"> &lt;p&gt;</span>{" "}
-                <span className="property">
-                  I am responsible for bring websites to life and creating the
-                  experience that users want.{" "}
-                </span>
-                <span className="html">&lt;p&gt; </span>
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  );
-}
-function Portfolio() {
-  return (
-    <div class="row row-cols-1 row-cols-md-2 g-4 bg-transparent">
-      <div class="col bg-transparent">
-        <div class="card container cardBg">
-          <img
-            src="placeholder.jpg"
-            class="card-img-top bg-transparent"
-            alt="..."
-          ></img>
-          <div class="card-body bg-transparent">
-            <h5 class="card-title bg-transparent">Card title</h5>
-            <p class="card-text bg-transparent">
-              This is a longer card with supporting text below as a natural
-              lead-in to additional content.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="col bg-transparent">
-        <div class="card bg-transparent container cardBg">
-          <img
-            src="placeholder.jpg"
-            class="card-img-top bg-transparent"
-            alt="..."
-          ></img>
-          <div class="card-body bg-transparent">
-            <h5 class="card-title bg-transparent">Card title</h5>
-            <p class="card-text bg-transparent">
-              This is a longer card with supporting text below as a natural
-              lead-in to additional content.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="col bg-transparent">
-        <div class="card container cardBg">
-          <img
-            src="placeholder.jpg"
-            class="card-img-top bg-transparent"
-            alt="..."
-          ></img>
-          <div class="card-body bg-transparent">
-            <h5 class="card-title bg-transparent">Card title</h5>
-            <p class="card-text bg-transparent">
-              This is a longer card with supporting text below as a natural
-              lead-in to additional content.
-            </p>
-          </div>
-        </div>
-      </div>
 
-      <div class="col bg-transparent">
-        <div class="card container cardBg">
-          <img src="placeholder.jpg" class="card-img-top" alt="..."></img>
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">
-              This is a longer card with supporting text below as a natural
-              lead-in to additional content.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  );
-}
 
-function Contact() {
-  return (
-    <div className="cardBg p-3">
-      <Form className="mt-5">
-        <Form.Group
-          className="mb-3 bg-transparent"
-          controlId="exampleForm.ControlInput1"
-        >
-          <Form.Label className="text-light bg-transparent">
-            Email address
-          </Form.Label>
-          <Form.Control type="email" placeholder="name@example.com" />
-        </Form.Group>
-        <Form.Group
-          className="mb-3 bg-transparent"
-          controlId="exampleForm.ControlTextarea1"
-        >
-          <Form.Label className="text-light bg-transparent">Comment</Form.Label>
-          <Form.Control as="textarea" rows={10} />
-        </Form.Group>
-        <Button variant="secondary">Submit</Button>{" "}
-      </Form>
-    </div>
-  );
-}
+import { Link, Route, BrowserRouter as Router, Routes } from "react-router-dom";
+import Portfolio from "./components/portfolio";
+import Contact from "./components/contact";
+import AboutMe from "./components/aboutMe";
 
 function App() {
-  const [showAbout, setShowAbout] = useState(true);
-  const [showPortfolio, setShowPortfolio] = useState(false);
-  const [showContact, setShowContact] = useState(false);
-
-  const handleAboutClick = () => {
-    setShowAbout(true);
-    setShowPortfolio(false);
-    setShowContact(false);
-  };
-
-  const handlePortfolioClick = () => {
-    setShowAbout(false);
-    setShowPortfolio(true);
-    setShowContact(false);
-  };
-
-  const handleContactClick = () => {
-    setShowAbout(false);
-    setShowPortfolio(false);
-    setShowContact(true);
-  };
-
   return (
-    <div id="infoCard" class="card">
-      <nav class="navbar">
-        <form class="container-fluid justify-content-end">
-          <button
-            id="btn"
-            class="btn btnAbout"
-            type="button"
-            onClick={handleAboutClick}
-          >
-            About
-          </button>
-          <button
-            id="btn"
-            class=" btn btnPortfolio"
-            type="button"
-            onClick={handlePortfolioClick}
-          >
-            Portfolio
-          </button>
-          <button
-            id="btn"
-            class=" btn btnContact"
-            type="button"
-            onClick={handleContactClick}
-          >
-            Contact
-          </button>
-        </form>
-      </nav>
-      <div id="root" class="card-body">
-        {showAbout && <About />}
-        {showPortfolio && <Portfolio />}
-        {showContact && <Contact />}
+    <Router>
+      <div className="p-4 ">
+    <div className=" row row-cols-1 row-cols-md-2 g-4">
+      <div className="h-100 container">
+      <div className="col">
+        <div className="h-50 text-center" id="main-card">
+          <img className="me" src="me.png" alt="" />
+          <h2 className="pt-5">Jose Orozco</h2>
+          <p>Full stack developer</p>
+  
+          <ul className="fs-4 list-group list-group-flush">
+            <li className="list-group-item">
+              <img id="icon" src="phone.png" alt="" /> (801)-906-3166
+            </li>
+            <li className="list-group-item">
+              <img id="icon" className="" src="at.png" alt="" />
+              josearozco15@gmail.com
+            </li>
+            <li className="list-group-item">
+              <img id="icon" className="" src="pin.png" alt="" />
+              Utah, United States
+            </li>
+          </ul>
+        </div>
+        </div>
+      </div>
+      <div className="container ">
+      <div className="col ">
+        <div id="infoCard" className=" h-75 card">
+          <nav className="navbar">
+            <form className="container-fluid justify-content-end">
+              <Link to="/aboutMe">
+                <button id="btn" className="btn btnAbout" type="button">
+                  About
+                </button>
+              </Link>
+              <Link to="/portfolio">
+                <button id="btn" className="btn btnPortfolio" type="button">
+                  Portfolio
+                </button>
+              </Link>
+              <Link to="/contact">
+                <button id="btn" className="btn btnContact" type="button">
+                  Contact
+                </button>
+              </Link>
+            </form>
+          </nav>
+          <Routes>
+            <Route path="/portfolio" element={<Portfolio />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/aboutMe" element={<AboutMe />} />
+          </Routes>
+        </div>
+      </div>
       </div>
     </div>
+    </div>
+  </Router>
+  
   );
 }
+
+
+
+
+
+
 
 export default App;

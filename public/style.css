@@ -1,28 +1,39 @@
 * {
   background-color: #565554;
-}
 
-#main-card {
-  min-height: 700px;
+}
+#portfolio p{
+  color: whitesmoke;
+  display: non;
+}
+#portfolio h5{
+  color: whitesmoke;
+ 
+}
+#portfolio{
   background: none;
-  display: block;
+}
+#main-card {
+  /* min-height: 700px; */
+  background: none;
+  /* display: block; */
   padding-bottom: 3px;
   background-color: rgba(255, 255, 255, 0.074);
   border: 1px solid rgba(255, 255, 255, 0.222);
   border-radius: 0.7rem;
-  width: 25%;
-  margin: 2%;
+  width: 80%;
+  /* margin: 2%; */
 }
 #infoCard {
-  min-height: 700px;
-  display: block;
+  /* min-height: 700px; */
+  /* display: block; */
   background: none;
-  padding-bottom: 3px;
+  /* padding-bottom: 3px; */
   background-color: rgba(255, 255, 255, 0.074);
   border: 1px solid rgba(255, 255, 255, 0.222);
   border-radius: 0.7rem;
-  width: 100%;
-  margin: 2%;
+  padding: 3%;
+  /* margin: 2%; */
 }
 
 img {
